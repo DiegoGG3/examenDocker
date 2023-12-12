@@ -7,8 +7,6 @@ require_once "vendor/autoload.php";
 require_once "DB.php";
 require_once "persona.php";
 
-
-
 $client = new Client();
 
 $nombre = $_POST["nombre"];

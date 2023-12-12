@@ -28,7 +28,6 @@ class correo {
         $mail->Password   = "qnwq grag uxzu xico";    //CLAVE 
         $mail->setFrom('dgargay987@g.educaand.es', 'Diego');
         $mail->Subject    = $this->asunto;
-        $mail->addAttachment("pdfs/pdfExamen.pdf");
         $mail->MsgHTML($this->descripcion);
         $address = $this->destinatario;
         $mail->AddAddress($address, "Yo");

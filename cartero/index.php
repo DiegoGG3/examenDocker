@@ -15,12 +15,8 @@ $response = $client->request('POST', 'http://pdf',
 
 $pdf = $response->getBody();
 
-// Guardar el PDF en el directorio local
-file_put_contents('pdfs/pdfExamen.pdf', $pdf);
-
-// Configurar las cabeceras para la descarga del archivo
 header('Content-Type: application/pdf');
-header('Content-Disposition: attachment; filename="pdfExamen.pdf"');
+header('Content-Disposition: attachment; filename="mipdf.pdf"');
 
 require_once "entities/correo.php";
 
