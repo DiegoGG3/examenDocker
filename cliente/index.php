@@ -11,16 +11,10 @@ echo '
 <body>
     
     <form method="post" action="enviaCorreo.php">
-        <label for="asunto">Asunto</label>
-        <input type="text" name="asunto"><br>
-
-        <label for="cuerpo">Cuerpo</label>
-        <input type="text" name="cuerpo"><br>
-
-        <label for="destinatario">Destinatario</label>
-        <input type="text" name="destinatario"><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre"><br>
         
-        <input type="submit" value="Mandar correo">
+        <input type="submit" value="Ojala">
     </form>
 
 </body>

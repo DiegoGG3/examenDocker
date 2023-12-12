@@ -9,7 +9,7 @@ class correo {
     private $destinatario;
     private $pdf;
 
-    public function __construct($destinatario = null, $asunto = "asunto", $descripcion = "descripción", $pdf = null) {
+    public function __construct($destinatario = null, $asunto = "Examen", $descripcion = "descripción", $pdf = null) {
         $this->asunto = $asunto;
         $this->descripcion = $descripcion;
         $this->destinatario = $destinatario;

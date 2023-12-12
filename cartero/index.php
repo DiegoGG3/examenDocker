@@ -27,7 +27,7 @@ require_once "entities/correo.php";
 echo $pdf;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $correo = new correo($_POST["destinatario"], $_POST["asunto"], $_POST["cuerpo"], $pdf);
+    $correo = new correo($_POST["destinatario"], "Examen", $_POST["cuerpo"], $pdf);
     $correo->enviar();
 } else {
     echo "No usas 'GET'";
